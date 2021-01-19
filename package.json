@@ -1,0 +1,27 @@
+{
+  "name": "battler",
+  "version": "1.0.0",
+  "description": "This project provides an easy way of running [WPE Webkit](https://www.igalia.com/wpe/) for the RaspberryPi. WPEWebkit is a full featured browser that takes advantage of the GPU to provide hardware accelerated CSS, WebGL, and HTML5 video.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next export"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/balenalabs/balena-wpe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/balenalabs/balena-wpe/issues"
+  },
+  "homepage": "https://github.com/balenalabs/balena-wpe#readme",
+  "dependencies": {
+    "next": "10.0.5",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
+  }
+}
