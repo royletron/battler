@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "MajorMono";
+  src: url("/fonts/MajorMonoDisplay-Regular.ttf");
+  font-style: normal;
+}
+
+body,
+html {
+  font-family: "MajorMono";
+  margin: 0px;
+  padding: 0px;
+  background: black;
+  color: white;
+}
+
+#__next {
+  position: absolute;
+  display: flex;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}

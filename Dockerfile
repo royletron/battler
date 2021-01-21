@@ -1,16 +1,16 @@
-FROM node:14 AS builder
+FROM node:14-buster as base
+WORKDIR /usr/src
 
-WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm install
-COPY pages pages
+COPY . .
 RUN npm run build
 RUN npm run export
 
 FROM petrosagg/balena-wpe:raspberrypi3-094d55a
 
 COPY udev-rules/ /etc/udev/rules.d/
-COPY --from=builder /usr/src/app/out /var/lib/public_html
+COPY --from=base /usr/src/out /var/lib/public_html
 
 ENV WPE_URL="file:///var/lib/public_html/index.html"
 
